@@ -79,6 +79,26 @@ button {
   display: none;
 }
 
+.top-bar__visit {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: inherit;
+}
+
+.top-bar__visit::after {
+  content: ".";
+}
+
+.top-bar__visit:hover,
+.top-bar__visit:focus-visible {
+  color: var(--blue);
+}
+
 .cofo-span {
   font-family: var(--cofo);
 }
